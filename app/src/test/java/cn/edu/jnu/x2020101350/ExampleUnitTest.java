@@ -18,15 +18,20 @@ public class ExampleUnitTest {
     }
     @Test
     public void testGutterGame() {
-        for (int i = 0; i < 20; i++) {
-            g.roll(0);
-        }
+        rollMany(0,20);
         assertEquals(0, g.score());
     }
 
     @Test
     public void testAllOnes() {
-      
+        rollMany(1,20);
+        assertEquals(20, g.score());
+    }
+
+    private void rollMany(int pins, int n) {
+        for (int i = 0; i < n; i++) {
+            g.roll(pins);
+        }
     }
 
 
