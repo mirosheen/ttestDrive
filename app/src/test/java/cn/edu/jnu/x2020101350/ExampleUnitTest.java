@@ -48,5 +48,10 @@ public class ExampleUnitTest {
         g.roll(5);
     }
 
+    @Test
+    public void testOneStrike() {
+       
+    }
+
 
 }
