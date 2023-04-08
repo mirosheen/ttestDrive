@@ -61,5 +61,11 @@ public class ExampleUnitTest {
         g.roll(10);
     }
 
+    @Test
+    public void testPerfectGame() {
+
+        
+    }
+
 
 }
