@@ -23,4 +23,12 @@ public class ExampleUnitTest {
         }
         assertEquals(0, g.score());
     }
+
+    @Test
+    public void testAllOnes() {
+      
+    }
+
+
+
 }
