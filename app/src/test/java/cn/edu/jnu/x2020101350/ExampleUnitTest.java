@@ -37,7 +37,15 @@ public class ExampleUnitTest {
 
     @Test
     public void testOneSpare() {
-       
+        rollSpare();
+        g.roll(3);
+        rollMany(0,17);
+        assertEquals(16, g.score());
+    }
+
+    private void rollSpare() {
+        g.roll(5);
+        g.roll(5);
     }
 
 
