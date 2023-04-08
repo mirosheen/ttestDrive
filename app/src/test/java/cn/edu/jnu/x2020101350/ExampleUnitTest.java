@@ -63,8 +63,8 @@ public class ExampleUnitTest {
 
     @Test
     public void testPerfectGame() {
-
-        
+        rollMany(10,12);
+        assertEquals(300, g.score());
     }
 
 
