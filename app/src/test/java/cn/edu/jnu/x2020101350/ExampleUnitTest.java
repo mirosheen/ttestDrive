@@ -50,7 +50,15 @@ public class ExampleUnitTest {
 
     @Test
     public void testOneStrike() {
-       
+        rollStrike();
+        g.roll(3);
+        g.roll(4);
+        rollMany(0,16);
+        assertEquals(24, g.score());
+    }
+
+    private void rollStrike() {
+        g.roll(10);
     }
 
 
